@@ -49,6 +49,8 @@
 .dragonTitle {
   font-size: 1.1em;
 }
+button{-webkit-appearance: none!important;}
+
 @media (max-width: 852px) {
   .logo-button {
     font-size: 20px;
