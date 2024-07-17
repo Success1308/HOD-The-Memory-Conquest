@@ -1,0 +1,46 @@
+.game-over-modal-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 97%;
+  max-width: 550px;
+  font-family: GameofThrones;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.final-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  letter-spacing: -0.07em;
+}
+
+.final-score {
+  font-size: 1.2rem;
+}
+
+.final-score-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.status-gif {
+  min-width: 300px;
+  border-radius: 2rem;
+  padding: 1rem;
+}

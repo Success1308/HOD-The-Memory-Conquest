@@ -1,0 +1,101 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.3ch !important;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* main css */
+@font-face {
+  font-family: GameofThrones;
+  src: url("./assets/GameofThrones.ttf") format("truetype");
+}
+
+.App,
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  width: 100vw;
+  font-family: GameofThrones;
+}
+
+.App {
+  width: 100vw;
+  background-image: url("/background3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .App {
+    padding: 20px;
+    height: auto;
+    font-size: 14px;
+  }
+}
+
+/* Styles for screens between 900px and 1100px wide */
+@media (min-width: 900px) and (max-width: 1100px) {
+  .App {
+    padding: 30px;
+    height: 100%;
+    font-size: 16px;
+  }
+}
+
+/* Styles for screens wider than 1100px */
+@media (min-width: 1100px) {
+  .App {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

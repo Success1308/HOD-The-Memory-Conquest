@@ -1,0 +1,70 @@
+.header {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-button {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  border: 0;
+  background-color: transparent;
+}
+
+.logo-button:focus {
+  outline: 0;
+}
+
+.logo-button:focus-visible {
+  outline: 1px solid black;
+}
+
+.logo-button:active {
+  scale: 0.95;
+  outline: 0;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 2rem;
+}
+
+.dragonDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.dragonHead {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.dragonTitle {
+  font-size: 1.1em;
+}
+@media (max-width: 852px) {
+  .logo-button {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+  }
+
+  .dragonHead {
+    font-size: 0.8em;
+  }
+
+  .dragonTitle {
+    font-size: 0.5em;
+  }
+}

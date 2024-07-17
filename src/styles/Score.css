@@ -1,0 +1,32 @@
+.stats {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  color: rgb(51, 43, 43);
+  font-size: 1.2rem;
+}
+
+.stats .best-score {
+  white-space: nowrap;
+}
+
+.stats .best-score span,
+.stats .current-score span {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+@media (max-width: 852px) {
+  .stats {
+    font-size: 0.5rem;
+  }
+  .stats .best-score span,
+  .stats .current-score span {
+    font-size: 0.8rem;
+    display: inline-block;
+  }
+}

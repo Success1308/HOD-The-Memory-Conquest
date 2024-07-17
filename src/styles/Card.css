@@ -1,0 +1,106 @@
+.card-container {
+  width: 250px;
+  height: 400px;
+}
+.card {
+  width: 200px;
+  height: 300px;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-radius: 1rem;
+}
+
+.card:focus {
+  outline: 0;
+}
+
+.card:focus-visible {
+  outline: 1px solid black;
+}
+
+.card:active {
+  scale: 0.95;
+  outline: 0;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card-container.back .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-inner {
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.85s;
+  animation: flip-card 0.85s;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  width: 200px;
+  height: 300px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-back img,
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details > p {
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 0.1ch;
+}
+.card-name {
+  letter-spacing: -0.02em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 6px;
+  font-weight: bold;
+  max-width: 100%;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+@keyframes flip-card {
+  from {
+    transform: rotateY(180deg);
+    pointer-events: none;
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@media (max-width: 852px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    margin-left: auto;
+  }
+}
