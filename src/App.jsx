@@ -23,7 +23,7 @@ const App = () => {
   const CARD_SLEEP_TIME = 800;
   const MIN_LOAD_TIME = 250;
   const { dragons, getRandomDragons, shuffleDragons, setDragons } =
-    useDragons();
+    useDragons(INITIAL_DRAGONS_AMOUNT);
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(
     localStorage.getItem("best-score") || 0
