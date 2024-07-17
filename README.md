@@ -20,7 +20,7 @@ Here're some of the project's best features:
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://github.com/Success1308/Resume-Maker/assets/167788445/50215987-80bb-429e-83dd-aa3bf227a5d8" alt="project-screenshot" width="300" height="100/">
+<img src="/dragon-head-svgrepo-com.png" alt="project-screenshot" width="300" height="100/">
 
 <h2>🛠️ Installation Steps:</h2>
 
