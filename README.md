@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/Success1308/HOD-The-Memory-Conquest/image?font=KoHo&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Signal&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
-<p id="description">HOD: The Memory Conquest is a web-based memory game built using React. The game challenges players to match pairs of cards featuring characters from House of the Dragon.</p>
+<p id="description">HOD: The Memory Conquest is a web-based memory game built using React. The game challenges players to select only unique cards featuring characters from House of the Dragon.</p>
 
 <h2>🧐 Features</h2>
 
@@ -14,7 +14,7 @@ Here're some of the project's best features:
 - Audio Effects: Enjoy immersive sound effects during gameplay.
 - Responsive Design: Play seamlessly across different devices.
 - Integration with House of the Dragon API: Fetches character data dynamically from your custom API.
-  
+
 <h2>🚀 Demo</h2>
 
 [See Live Here .](https://hod-the-memory-conquest.netlify.app)
