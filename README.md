@@ -20,7 +20,7 @@ Here're some of the project's best features:
 
 <h2>Project Screenshots:</h2>
 
-<img src="/dragon-head-svgrepo-com.png" alt="project-screenshot" width="300" height="100/">
+<img src="[/dragon-head-svgrepo-com.png" alt="project-screenshot](https://github.com/user-attachments/assets/730eda41-f533-43b9-a6ac-dec4899bf3a6)" width="300" height="100/">
 
 <h2>🛠️ Installation Steps:</h2>
 
