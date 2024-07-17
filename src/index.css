@@ -76,8 +76,7 @@ body {
 }
 @media (max-width: 900px) {
   .App {
-    padding: 20px;
-    height: auto;
+    min-height: auto;
     font-size: 14px;
   }
 }
@@ -85,8 +84,7 @@ body {
 /* Styles for screens between 900px and 1100px wide */
 @media (min-width: 900px) and (max-width: 1100px) {
   .App {
-    padding: 30px;
-    height: 100%;
+    min-height: 100%;
     font-size: 16px;
   }
 }
