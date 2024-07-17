@@ -19,7 +19,7 @@ Here're some of the project's best features:
 [See Live Here .](https://hod-the-memory-conquest.netlify.app)
 
 <h2>Project Screenshots:</h2>
-<img src="(https://github.com/user-attachments/assets/730eda41-f533-43b9-a6ac-dec4899bf3a6)" width="300" height="100/">
+<img src="https://github.com/user-attachments/assets/730eda41-f533-43b9-a6ac-dec4899bf3a6" width="300" height="300/">
 
 <h2>🛠️ Installation Steps:</h2>
 
