@@ -93,7 +93,7 @@ body {
 /* Styles for screens wider than 1100px */
 @media (min-width: 1100px) {
   .App {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
