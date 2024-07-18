@@ -58,7 +58,11 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
