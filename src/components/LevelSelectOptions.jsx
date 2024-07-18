@@ -43,7 +43,7 @@ export default function LevelSelectOptions({ onStartGame }) {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  });
 
   const navigateLevels = (increment) => {
     setSelectedLevel((prev) => {

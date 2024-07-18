@@ -43,7 +43,7 @@ function GameOverModal({ score, onPlayAgain, onQuit, status, onContinue }) {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  });
 
   const navigateOptions = (increment) => {
     setSelectedOptionIndex((prevIndex) => {
