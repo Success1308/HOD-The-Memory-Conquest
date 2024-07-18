@@ -17,7 +17,6 @@ const options = [
     condition: (status) => status === "win",
   },
 ];
-
 function GameOverModal({ score, onPlayAgain, onQuit, status, onContinue }) {
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
 
@@ -44,7 +43,7 @@ function GameOverModal({ score, onPlayAgain, onQuit, status, onContinue }) {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [selectedOptionIndex, status]); // Ensure dependencies are updated
+  }, []);
 
   const navigateOptions = (increment) => {
     setSelectedOptionIndex((prevIndex) => {

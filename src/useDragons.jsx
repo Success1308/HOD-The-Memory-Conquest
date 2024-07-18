@@ -10,7 +10,7 @@ export default function useDragons() {
   const getDragon = async ({ id }) => {
     try {
       const res = await fetch(
-        https://house-of-the-dragon-api.vercel.app/characters/${id}
+        `https://house-of-the-dragon-api.vercel.app/characters/${id}`
       );
       if (!res.ok) {
         throw new Error("Failed to fetch character data");

@@ -18,9 +18,8 @@ export default function LevelSelectOptions({ onStartGame }) {
   const selectedLevelRef = useRef(selectedLevel);
 
   useEffect(() => {
-    selectedLevelRef.current = selectedLevel;
+    selectedLevelRef.current = selectedLevel; // Update ref when state changes
   }, [selectedLevel]);
-
   useEffect(() => {
     const handleKeyDown = (event) => {
       switch (event.key) {

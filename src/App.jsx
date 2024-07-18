@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import GameOverModal from "./components/GameOverModal";
@@ -33,20 +33,15 @@ const App = () => {
   const [cardsShowing, setCardsShowing] = useState(false);
   const [loading, setLoading] = useState(false);
 
- useEffect(() => {
-    if (gameStatus === "game" && scoreGoal !== null) {
-      const initializeDragons = async () => {
-        const randomDragons = await getRandomDragons(scoreGoal);
-        setLoading(true);
-        await sleep(MIN_LOAD_TIME);
-        setDragons(randomDragons);
-        setLoading(false);
-        await sleep(CARD_SLEEP_TIME);
-        setCardsShowing(true);
-      };
-      initializeDragons();
-    }
-  }, [gameStatus, scoreGoal, getRandomDragons, setDragons]);
+  const initializeDragons = async (amount) => {
+    const randomDragons = getRandomDragons(amount);
+    setLoading(true);
+    await sleep(MIN_LOAD_TIME);
+    setDragons(await randomDragons);
+    setLoading(false);
+    await sleep(CARD_SLEEP_TIME);
+    setCardsShowing(true);
+  };
 
   function incrementScore() {
     const incrementedScore = currentScore + 1;
