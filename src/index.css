@@ -28,7 +28,7 @@ button,
 textarea,
 select {
   font: inherit;
-  -webkit-appearance: none!important;
+  --webkit-appearance: none !important;
 }
 p,
 h1,
