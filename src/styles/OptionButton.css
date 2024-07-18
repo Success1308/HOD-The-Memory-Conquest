@@ -9,6 +9,7 @@
   text-transform: uppercase;
   font-family: GameofThrones;
   border: 0;
+  cursor: pointer;
 }
 
 .option-button img {
@@ -22,7 +23,6 @@
 }
 
 .option-button:hover::before,
-.option-button:focus::before,
 .option-button.selected::before {
   content: "";
   position: absolute;

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import click from "../assets/click.mp3";
 import playAudio from "../playAudio";
 import OptionButton from "../components/OptionButton";
@@ -12,8 +12,15 @@ const levels = [
   { label: "Knight's\u00A0 Challenge", goal: 10, index: 1 },
   { label: "Dragonlord's\u00A0 Trial", goal: 18, index: 2 },
 ];
+
 export default function LevelSelectOptions({ onStartGame }) {
   const [selectedLevel, setSelectedLevel] = useState(levels[0]);
+  const selectedLevelRef = useRef(selectedLevel);
+
+  useEffect(() => {
+    selectedLevelRef.current = selectedLevel;
+  }, [selectedLevel]);
+
   useEffect(() => {
     const handleKeyDown = (event) => {
       switch (event.key) {
@@ -24,6 +31,9 @@ export default function LevelSelectOptions({ onStartGame }) {
         case "ArrowDown":
         case "ArrowRight":
           navigateLevels(1);
+          break;
+        case "Enter":
+          handleEnter(selectedLevelRef.current.goal);
           break;
         default:
           break;
@@ -46,6 +56,7 @@ export default function LevelSelectOptions({ onStartGame }) {
       return prev;
     });
   };
+
   const handleEnter = (goal) => {
     onStartGame(goal);
     playAudio(clickAudio);
@@ -60,7 +71,12 @@ export default function LevelSelectOptions({ onStartGame }) {
             setSelectedLevel(level);
             handleEnter(level.goal);
           }}
-          selected={level === selectedLevel}
+          selected={level.index === selectedLevel.index}
+          onHoverChange={(isHovered) => {
+            if (isHovered) {
+              setSelectedLevel(level);
+            }
+          }}
         >
           {level.label}
         </OptionButton>
